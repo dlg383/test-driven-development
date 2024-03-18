@@ -1,0 +1,18 @@
+Instalar Choco
+
+1- Abrir powershell como admin
+2- Mirar execucion policy (Get-ExecutionPolicy)
+Si está en restricted hay que cambiarla
+3- Escribir el siguiente comando: Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+4. escribir choco para comprobar si está corretamente instalado.
+
+Instalar phyton
+
+1. Abrir powershell como admin
+2. Escribir choco install python (Puedes añadir el parametro --pre si quieres instalar la prerealease).
+3. Abrir cmd con python3 --version (si no va probar con python --version). ¡¡¡Importante reiniciar la terminal!!!
+
+Poner ejemplo de test y solución de código.
+
+3 Ejercicios
